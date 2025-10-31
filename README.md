@@ -1,7 +1,7 @@
 # Dev Only Notes:
 
 ## Building the notebook after edits:
-To see what the notebook will look like when publish fork the repository and build the book
+To see what the notebook will look like when publish clone or fork the repository and build the book
 
 command for building the full book:
 ```
