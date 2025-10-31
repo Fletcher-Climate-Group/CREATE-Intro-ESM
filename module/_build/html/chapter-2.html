@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Model Intercomparisons and Future Climate Scenarios​ &#8212; My sample book</title>
+    <title>How Well Do ESMs Represent The Present Day Climate?​ &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,11 +57,11 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter-3';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter-2';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Quantifying Uncertainty in Climate Simulations​" href="chapter-4.html" />
-    <link rel="prev" title="How Well Do ESMs Represent The Present Day Climate?​" href="chapter-2.html" />
+    <link rel="next" title="Model Intercomparisons and Future Climate Scenarios​" href="chapter-3.html" />
+    <link rel="prev" title="A Brief Introduction to Earth System Models" href="chapter-1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,8 +181,8 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="chapter-1.html">A Brief Introduction to Earth System Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter-2.html">How Well Do ESMs Represent The Present Day Climate?​</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Model Intercomparisons and Future Climate Scenarios​</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">How Well Do ESMs Represent The Present Day Climate?​</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-3.html">Model Intercomparisons and Future Climate Scenarios​</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter-4.html">Quantifying Uncertainty in Climate Simulations​</a></li>
 <li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks (Dev Only)</a></li>
 </ul>
@@ -256,7 +256,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter-3.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter-2.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +286,7 @@
       
       
       
-      <li><a href="_sources/chapter-3.ipynb" target="_blank"
+      <li><a href="_sources/chapter-2.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -368,7 +368,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Model Intercomparisons and Future Climate Scenarios​</h1>
+    <h1>How Well Do ESMs Represent The Present Day Climate?​</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,15 +382,14 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="model-intercomparisons-and-future-climate-scenarios">
-<h1>Model Intercomparisons and Future Climate Scenarios​<a class="headerlink" href="#model-intercomparisons-and-future-climate-scenarios" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="how-well-do-esms-represent-the-present-day-climate">
+<h1>How Well Do ESMs Represent The Present Day Climate?​<a class="headerlink" href="#how-well-do-esms-represent-the-present-day-climate" title="Link to this heading">#</a></h1>
 <p>Learning Outcomes:​</p>
 <ol class="arabic simple">
-<li><p>Explain the concepts of climate sensitivity, radiative forcing and climate feedbacks ​</p></li>
-<li><p>Describe what the Coupled Model Intercomparison Project (CMIP) is and its purpose ​</p></li>
-<li><p>Understand what future emission scenarios are and how they are developed​</p></li>
-<li><p>Explain the differences between predictions, forecasts and
-projections​</p></li>
+<li><p>Develop an understanding of the metrics of climate model
+performance​</p></li>
+<li><p>Quantify model performance of temperature and precipitation over the recent past​</p></li>
+<li><p>Understand how and why spatial and temporal scale affects model performance</p></li>
 </ol>
 </section>
 
@@ -425,20 +424,20 @@ projections​</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="chapter-2.html"
+       href="chapter-1.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">How Well Do ESMs Represent The Present Day Climate?​</p>
+        <p class="prev-next-title">A Brief Introduction to Earth System Models</p>
       </div>
     </a>
     <a class="right-next"
-       href="chapter-4.html"
+       href="chapter-3.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quantifying Uncertainty in Climate Simulations​</p>
+        <p class="prev-next-title">Model Intercomparisons and Future Climate Scenarios​</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

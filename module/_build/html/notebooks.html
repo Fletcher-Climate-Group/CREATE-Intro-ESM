@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>A Brief Introduction to Earth System Models &#8212; My sample book</title>
+    <title>Content with notebooks (Dev Only) &#8212; My sample book</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -57,11 +57,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter-1';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How Well Do ESMs Represent The Present Day Climate?​" href="chapter-2.html" />
-    <link rel="prev" title="Welcome to the CREATE Intro to ESMs" href="intro.html" />
+    <link rel="prev" title="Quantifying Uncertainty in Climate Simulations​" href="chapter-4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,11 +181,11 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">A Brief Introduction to Earth System Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter-1.html">A Brief Introduction to Earth System Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter-2.html">How Well Do ESMs Represent The Present Day Climate?​</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter-3.html">Model Intercomparisons and Future Climate Scenarios​</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter-4.html">Quantifying Uncertainty in Climate Simulations​</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks (Dev Only)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Content with notebooks (Dev Only)</a></li>
 </ul>
 
     </div>
@@ -256,7 +257,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter-1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fnotebooks.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -286,7 +287,7 @@
       
       
       
-      <li><a href="_sources/chapter-1.ipynb" target="_blank"
+      <li><a href="_sources/notebooks.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -370,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>A Brief Introduction to Earth System Models</h1>
+    <h1>Content with notebooks (Dev Only)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,10 +381,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understand-the-complexities-of-earths-mean-climate-and-variability">Understand the complexities of earth’s mean climate and variability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-the-main-components-of-a-climate-model-and-how-earths-climate-is-represented-in-them">Identify the main components of a climate model and how Earth’s climate is represented in them​</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appreciate-the-range-of-earth-system-model-configurations-and-their-application">Appreciate the range of Earth System Model configurations and their application​</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understand-why-the-members-of-an-ensemble-of-earth-system-models-differ">Understand why the members of an ensemble of Earth System Models differ ​</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
 </ul>
             </nav>
         </div>
@@ -395,45 +395,87 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="a-brief-introduction-to-earth-system-models">
-<h1>A Brief Introduction to Earth System Models<a class="headerlink" href="#a-brief-introduction-to-earth-system-models" title="Link to this heading">#</a></h1>
-<p><strong>Learning Outcomes:​</strong></p>
-<ol class="arabic simple">
-<li><p>Understand the complexities of earth’s mean climate and variability​</p></li>
-<li><p>Identify the main components of a climate model and how Earth’s climate is represented in them​</p></li>
-<li><p>Appreciate the range of Earth System Model configurations and their application​</p></li>
-<li><p>Understand why the members of an ensemble of Earth System
-Models differ ​</p></li>
-</ol>
-<section id="understand-the-complexities-of-earths-mean-climate-and-variability">
-<h2>Understand the complexities of earth’s mean climate and variability<a class="headerlink" href="#understand-the-complexities-of-earths-mean-climate-and-variability" title="Link to this heading">#</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla dolor, tincidunt ut aliquet vitae, blandit vitae mauris. Pellentesque ullamcorper nunc sed consectetur pellentesque. In pellentesque commodo rutrum. Quisque quis luctus ante. Ut et risus porttitor purus commodo venenatis. Nunc efficitur viverra lorem, in lobortis arcu auctor sed. Quisque aliquet lobortis arcu, a condimentum neque efficitur sit amet.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="content-with-notebooks-dev-only">
+<h1>Content with notebooks (Dev Only)<a class="headerlink" href="#content-with-notebooks-dev-only" title="Link to this heading">#</a></h1>
+<p>You can also create content with Jupyter Notebooks. This means that you can include
+code blocks and their outputs in your book.</p>
+<section id="markdown-notebooks">
+<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Link to this heading">#</a></h2>
+<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
+<p><img alt="" src="https://myst-parser.readthedocs.io/en/latest/_static/logo-wide.svg" /></p>
+<p>You can also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
+<div class="math notranslate nohighlight">
+\[
+math^{blocks}
+\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+\mbox{mean} la_{tex} \\ \\
+math blocks
+\end{aligned}
+\end{split}\]</div>
+<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+</section>
+<section id="myst-markdown">
+<h2>MyST markdown<a class="headerlink" href="#myst-markdown" title="Link to this heading">#</a></h2>
+<p>MyST markdown works in Jupyter Notebooks as well. For more information about MyST markdown, check
+out <a class="reference external" href="https://jupyterbook.org/content/myst.html">the MyST guide in Jupyter Book</a>,
+or see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/">the MyST markdown documentation</a>.</p>
+</section>
+<section id="code-blocks-and-outputs">
+<h2>Code blocks and outputs<a class="headerlink" href="#code-blocks-and-outputs" title="Link to this heading">#</a></h2>
+<p>Jupyter Book will also embed your code blocks and output in your book.
+For example, here’s some sample Matplotlib code:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Code Block here</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span><span class="p">,</span> <span class="n">cycler</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;matplotlib&#39;
 </pre></div>
 </div>
 </div>
 </div>
-</section>
-<section id="identify-the-main-components-of-a-climate-model-and-how-earths-climate-is-represented-in-them">
-<h2>Identify the main components of a climate model and how Earth’s climate is represented in them​<a class="headerlink" href="#identify-the-main-components-of-a-climate-model-and-how-earths-climate-is-represented-in-them" title="Link to this heading">#</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla dolor, tincidunt ut aliquet vitae, blandit vitae mauris. Pellentesque ullamcorper nunc sed consectetur pellentesque. In pellentesque commodo rutrum. Quisque quis luctus ante. Ut et risus porttitor purus commodo venenatis. Nunc efficitur viverra lorem, in lobortis arcu auctor sed. Quisque aliquet lobortis arcu, a condimentum neque efficitur sit amet.</p>
-</section>
-<section id="appreciate-the-range-of-earth-system-model-configurations-and-their-application">
-<h2>Appreciate the range of Earth System Model configurations and their application​<a class="headerlink" href="#appreciate-the-range-of-earth-system-model-configurations-and-their-application" title="Link to this heading">#</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla dolor, tincidunt ut aliquet vitae, blandit vitae mauris. Pellentesque ullamcorper nunc sed consectetur pellentesque. In pellentesque commodo rutrum. Quisque quis luctus ante. Ut et risus porttitor purus commodo venenatis. Nunc efficitur viverra lorem, in lobortis arcu auctor sed. Quisque aliquet lobortis arcu, a condimentum neque efficitur sit amet.</p>
-</section>
-<section id="understand-why-the-members-of-an-ensemble-of-earth-system-models-differ">
-<h2>Understand why the members of an ensemble of Earth System Models differ ​<a class="headerlink" href="#understand-why-the-members-of-an-ensemble-of-earth-system-models-differ" title="Link to this heading">#</a></h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla dolor, tincidunt ut aliquet vitae, blandit vitae mauris. Pellentesque ullamcorper nunc sed consectetur pellentesque. In pellentesque commodo rutrum. Quisque quis luctus ante. Ut et risus porttitor purus commodo venenatis. Nunc efficitur viverra lorem, in lobortis arcu auctor sed. Quisque aliquet lobortis arcu, a condimentum neque efficitur sit amet.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fixing random state for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">19680801</span><span class="p">)</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">+</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">T</span>
+<span class="n">cmap</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">coolwarm</span>
+<span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;axes.prop_cycle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cycler</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">)))</span>
+
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.lines</span><span class="w"> </span><span class="kn">import</span> <span class="n">Line2D</span>
+<span class="n">custom_lines</span> <span class="o">=</span> <span class="p">[</span><span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">0.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">.5</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">),</span>
+                <span class="n">Line2D</span><span class="p">([</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="n">cmap</span><span class="p">(</span><span class="mf">1.</span><span class="p">),</span> <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">)]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">custom_lines</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Cold&#39;</span><span class="p">,</span> <span class="s1">&#39;Medium&#39;</span><span class="p">,</span> <span class="s1">&#39;Hot&#39;</span><span class="p">]);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There is a lot more that you can do with outputs (such as including interactive outputs)
+with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a></p>
 </section>
 </section>
 
@@ -468,22 +510,13 @@ Models differ ​</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="chapter-4.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to the CREATE Intro to ESMs</p>
+        <p class="prev-next-title">Quantifying Uncertainty in Climate Simulations​</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="chapter-2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">How Well Do ESMs Represent The Present Day Climate?​</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -501,10 +534,9 @@ Models differ ​</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understand-the-complexities-of-earths-mean-climate-and-variability">Understand the complexities of earth’s mean climate and variability</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-the-main-components-of-a-climate-model-and-how-earths-climate-is-represented-in-them">Identify the main components of a climate model and how Earth’s climate is represented in them​</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#appreciate-the-range-of-earth-system-model-configurations-and-their-application">Appreciate the range of Earth System Model configurations and their application​</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understand-why-the-members-of-an-ensemble-of-earth-system-models-differ">Understand why the members of an ensemble of Earth System Models differ ​</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown-notebooks">Markdown + notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#myst-markdown">MyST markdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-blocks-and-outputs">Code blocks and outputs</a></li>
 </ul>
   </nav></div>
 
