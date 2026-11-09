@@ -2,15 +2,15 @@
 
 This module was written as an intro to Earth System Models as a whole, how to use them, and how to interpret their data. The module will include 6 labs that go along with the main chapters, but for now Labs 1, 2, 4, and 5 are available.
 
-- Chapter 1
-- Chapter 2
-- Chapter 3
-- Chapter 4
-- Chapter 5
-- Chapter 6
-- Supplementary Chapter 1
-- Supplementary Chapter 2
-- Supplementary Chapter 3
+- Chapter 1 — Introduction to Earth System Models - Lab 1: Done
+- Chapter 2 — Radiative Forcing and Climate Sensitivity - Lab 2: Done
+- Chapter 3 — Climate Feedbacks - Lab 3: In Progress
+- Chapter 4 — Multi-Model Ensembles (CMIP) - Lab 4: Done
+- Chapter 5 — Detection and Attribution (DAMIP) - Lab 5: Done
+- Chapter 6 — Quantifying Model Uncertainty -  Lab 6: In Progress
+- Supplementary Chapter 1 — Initial Condition Ensembles
+- Supplementary Chapter 2 — Perturbed Parameter Ensembles
+- Supplementary Chapter 3 — Emergent Constraints
 
 ## Setup
 
