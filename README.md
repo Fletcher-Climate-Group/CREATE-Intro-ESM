@@ -31,3 +31,12 @@ The labs need Python with a set of climate-data packages. The `environment.yml` 
    ```
 
    If you use VS Code instead, open a notebook and select the `esm-intro` kernel.
+
+## Authors
+
+Module materials written and developed by **Tyler Herrington** and **Matthew Mast**, under supervision from the original course creator, **Dr Chris Fletcher**, University of Waterloo.
+
+## Version
+
+Version 1.0, November 2026
+   
