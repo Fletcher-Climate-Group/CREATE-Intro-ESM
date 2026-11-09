@@ -1,0 +1,20 @@
+name: esm-intro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - xarray
+  - netcdf4
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - dask
+  - intake-esm
+  - fsspec
+  - gcsfs
+  - zarr
+  - tqdm
+  - jupyterlab
+  - ipykernel
