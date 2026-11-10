@@ -30,7 +30,7 @@ The labs need Python with a set of climate-data packages. The `environment.yml` 
    jupyter lab
    ```
 
-   If you use VS Code instead, open a notebook and select the `esm-intro` kernel.
+   If you use VS Code instead, open a notebook and follow the step 2 and then select the `esm-intro` kernel.
 
 ## Authors
 
